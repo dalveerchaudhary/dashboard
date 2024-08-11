@@ -1,35 +1,174 @@
-<html>
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
-    <nav>
-        <div class="container-fluid">
-            <div class="row bg-info p-2">
-                <div class="col">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="col d-flex float-end ">
-                    <h5>icon </h5>
-                    <h5>icon</h5>
-                    <h5>icon</h5>
+    <!-- Sidebar start -->
+    <nav class="sidebar">
+        <a href="#" class="logo">Dashboard</a>
 
-                </div>
-            </div>
+        <div class="menu-content">
+            <ul class="menu-items">
+                <!-- <div class="menu-title">Your menu title</div> -->
+
+                <li class="item">
+                    <a href="#">Dashboard</a>
+                </li>
+                <!-- dropdown Catalog -->
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>Catalog</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Catalog
+                        </div>
+                        <li class="item">
+                            <a href="#">- Products</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">- Categories</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">- Attributes</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">- Coupons</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- dropdown Catalog -->
+                <li class="item">
+                    <a href="#">Customers</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Orders</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Our Staff</a>
+                </li>
+                <li class="item">
+                    <a href="#">Settings</a>
+                </li>
+
+                <!-- dropdown International -->
+                <li class="item">
+                    <div class="submenu-item">
+                        <span> International</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            International
+                        </div>
+                        <li class="item">
+                            <a href="#">- Languages</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Currencies</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">- Rupee</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- dropdown International -->
+
+                <!-- dropdown Online Store -->
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>Online Store</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Online Store
+                        </div>
+                        <li class="item">
+                            <a href="#">- View Store</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">- Store Customization</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Store Settings</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+                <!-- dropdown Online Store -->
+
+                   <!-- dropdown Pages -->
+                   <li class="item">
+                    <div class="submenu-item">
+                        <span>Pages</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Pages
+                        </div>
+                        <li class="item">
+                            <a href="#">- 404</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Coming Soon</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+                <!-- dropdown Pages -->
+
+
+            </ul>
         </div>
     </nav>
+    <!-- Sidebar  close -->
+
+<!-- Top navbar start -->
+    <nav class="navbar">
+        <div>
+            <i class="fa-solid fa-bars" id="sidebar-close"></i>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()"><img  class="dropbtn" src="styles_by_koko_white_logo_designcopy.png" width="32px" alt=""></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
+    </nav>
+<!-- Top navbar -->
+
+
+    <main class="main">
+        <!-- <h1>Admin Dashboard Content</h1> -->
+    </main>
+
     <script src="app.js"></script>
 </body>
 
