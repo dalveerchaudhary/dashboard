@@ -6,6 +6,7 @@ const subMenuTitles = document.querySelectorAll(".submenu .menu-title");
 
 sidebarClose.addEventListener("click", () => sidebar.classList.toggle("close"));
 
+
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     menu.classList.add("submenu-active");
@@ -17,6 +18,23 @@ menuItems.forEach((item, index) => {
     });
   });
 });
+
+$(document).ready(function(){
+  let window_width=$(window).width();
+    if(window_width<500)
+    sidebar.classList.toggle("hide")
+    else
+    sidebar.classList.toggle("close")
+
+  $(window).resize(function() {
+    let window_width=$(window).width();
+    if(window_width<500)
+    sidebar.classList.toggle("hide")
+    else
+    sidebar.classList.toggle("close")
+  });
+});
+
 
 subMenuTitles.forEach((title) => {
   title.addEventListener("click", () => {
