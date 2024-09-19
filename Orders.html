@@ -139,29 +139,580 @@
             </div>
             <!-- body contant -->
             <div id="layoutSidenav_content">
-             <main class="container">
-                <div class="row">
+             <main class="container ">
+                <div class="row d-flex">
                     <h3 class="text-white">Orders</h3>
                 </div>
-                <div class="row bg-white p-5">
-                   <div class="col">
+                <div class="row bg-white p-4 m-3">
+                   <div class="col-lg-2 col-sm-12">
+                    <button>Download </button>
+                   </div>
+                   <div class="col-lg-3 col-sm-12">
                     <button>Download All Orders</button>
                    </div>
-                   <div class="col">
+                   <div class="col-lg-3 col-sm-12">
                     <button>Download All Orders</button>
                    </div>
-                   <div class="col">
+                   <div class="col-lg-2 col-sm-12">
                     <button>Download All Orders</button>
                    </div>
-                   <div class="col">
-                    <button>Download All Orders</button>
-                   </div>
-                   <div class="col">
+                   <div class="col-lg-2 col-sm-12">
                     <button>Download All Orders</button>
                    </div>
 
                 </div>
              </main>
+             <main class="container">
+                <div class="row p-3">
+                    <div class="col-2">
+                        <h3 class="text-white">Attributes</h3>
+                    </div>
+                </div>
+                <div class="row bg-dark p-4 m-3 d-flex">
+                    <div class="col-3  ">
+                        <button type="button" class="btn btn-outline-secondary text-white p-2 m-1"><i
+                                class="fa-solid fa-file-export"></i> Export</button>
+                        <button type="button" class="btn btn-outline-secondary text-white p-2 m-1"><i
+                                class="fa-solid fa-file-import"></i> Import</button>
+
+                    </div>
+                    <div class="col-9 " style="display: flex; justify-content: right;">
+                        <button type="button" class="btn btn-secondary text-white p-2 m-1"><i
+                                class="fa-regular fa-pen-to-square"></i> Bulk Action</button>
+                        <button type="button" class="btn btn-danger text-white p-2 m-1"><i
+                                class="fa-solid fa-trash"></i> Delete</button>
+                        <button type="button" class="btn btn-success text-white p-2 m-1"><i
+                                class="fa-solid fa-plus"></i> Add Product</button>
+                    </div>
+
+                </div>
+                <div class="row bg-dark p-4 m-3 ">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <input style="padding: 13px; border: 1px solid gray; " type="password" id="inputPassword6"
+                            class="form-control bg-dark" placeholder="Search by Category name">
+                    </div>
+
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <button type="button" class="btn btn-success text-white"
+                            style="padding: 13px; width: 170px;">Filter</button>
+
+                    </div>
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <button type="button" class="btn btn-outline-secondary text-white"
+                            style="padding: 13px; width: 170px;">Reset</button>
+                    </div>
+                </div>
+                <!-- data table -->
+                <div class="card m-3 ">
+                    <div class="card-body">
+                        <table id="datatablesSimple">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </th>
+                                    <th>CAMPAIGN NAME</th>
+                                    <th>CODE</th>
+                                    <th>DISCOUNT</th>
+                                    <th>PUBLISHED</th>
+                                    <th>START DATE</th>
+                                    <th>END DATA</th>
+                                    <th>STATUS</th>
+                                    <th>ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <!-- <tfoot>
+                                        <tr>
+                                            <th>Nam</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>STAT</th>
+                                            <th>STATUS</th>
+                                            <th>Salary</th>
+        
+        
+                                        </tr>
+                                    </tfoot> -->
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>Summer Gift Voucher</td>
+                                    <td>SUMMER24</td>
+                                    <td>10%</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>16 Sep,2024 </td>
+                                    <td>18 Oct,2024</td>
+                                    <td><span class="badge text-bg-success rounded">Active</span></td>
+                                    <!-- <td></td>       -->
+                                    <td>
+                                        <a href="#" class="text-dark"><i class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="#" class="text-dark"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
             
             </div>
         </div>
